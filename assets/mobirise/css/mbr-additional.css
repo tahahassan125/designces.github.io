@@ -588,7 +588,7 @@ a[class*="text-"]:not(.nav-link):not(.dropdown-item):not([role]):not(.navbar-cap
 .cid-u3ZjFjbuii {
   padding-top: 6rem;
   padding-bottom: 6rem;
-  background-color: #ffffff;
+  background: linear-gradient(102deg,#001632 0%, #c24a5a 100%);  /*gradient k leay */
 }
 .cid-u3ZjFjbuii .row {
   flex-direction: row-reverse;
@@ -1672,7 +1672,9 @@ a {
 .cid-u3vIvqP5Ej {
   padding-top: 1rem;
   padding-bottom: 2rem;
-  background-color: #ffffff;
+  background-color: #ffffff; 
+  
+
 }
 .cid-u3vIvqP5Ej .row {
   flex-direction: row-reverse;
@@ -2193,6 +2195,8 @@ a {
     left: -1rem;
   }
 }
+
+/*Products of Products Page Section CSS*/
 .cid-u3v9Bi0jFc {
   padding-top: 2rem;
   padding-bottom: 4rem;
@@ -2261,6 +2265,7 @@ a {
 .cid-u3v9Bi0jFc .social-row {
   text-align: center;
 }
+
 .cid-u3vqeQOihl {
   background-image: url("../../../assets/images/background2.jpg");
 }
