@@ -2213,6 +2213,7 @@ a {
   background: #ffffff;
   border-radius: 4px;
 }
+
 @media (max-width: 991px) {
   .cid-u3v9Bi0jFc .card-wrap {
     margin-bottom: 2rem;
@@ -2253,7 +2254,7 @@ a {
   font-size: 1.5rem;
 }
 .cid-u3v9Bi0jFc .social-row .soc-item:hover {
-  background-color: #6592e6;
+  background-color: #F2F2F2;
 }
 .cid-u3v9Bi0jFc .social-row .soc-item:hover .mbr-iconfont {
   color: #ffffff;
@@ -2264,6 +2265,77 @@ a {
 .cid-u3v9Bi0jFc .card-title,
 .cid-u3v9Bi0jFc .social-row {
   text-align: center;
+}
+/* OUR PRODUCTS Section CSS Only  */
+.cid-u40sWCce7l {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #ffffff;
+}
+.cid-u40sWCce7l .mbr-section-title,
+.cid-u40sWCce7l .mbr-section-subtitle {
+  text-align: center;
+}
+.cid-u40sWCce7l .cost {
+  word-break: normal;
+}
+.cid-u40sWCce7l .card-wrapper {
+  margin-bottom: 2rem;
+  border-radius: 4px;
+  background: #fafafa;
+}
+.cid-u40sWCce7l .card-wrapper .top-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .cid-u40sWCce7l .card-wrapper {
+    padding: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .cid-u40sWCce7l .card-wrapper {
+    padding: 1rem;
+  }
+}
+/*Product Price Page Section CSS */
+
+.cid-u40tavBgbu {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #fafafa;
+}
+.cid-u40tavBgbu .oldcost {
+  text-decoration: line-through;
+  color: #353535;
+}
+.cid-u40tavBgbu .currentcost {
+  color: #232323;
+}
+.cid-u40tavBgbu .card-wrapper {
+  border-radius: 4px;
+  background: #ffffff;
+}
+@media (min-width: 992px) {
+  .cid-u40tavBgbu .text-box {
+    padding: 2rem;
+    padding-right: 4rem;
+  }
+}
+@media (max-width: 991px) {
+  .cid-u40tavBgbu .text-box {
+    padding: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .cid-u40tavBgbu .text-box {
+    padding: 1rem;
+  }
+}
+.cid-u40tavBgbu .image-wrapper img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .cid-u3vqeQOihl {
