@@ -56,6 +56,20 @@ $(window).on('load', function() {
         });
 	});
 
+	/*---------------
+		Form Switch
+	---------------- Custom ad*/
+    $('.form-switch').on('click', function (e) {
+		e.preventDefault();
+        $('.form-model').fadeIn(400);
+    });
+
+    $('.form-close-switch').on('click', function () {
+        $('.form-model').fadeOut(400, function () {
+            $('#form-input').val('');
+        });
+	});
+
 	/*-------------------
 		Hero Slider
 	-------------------*/
