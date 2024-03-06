@@ -333,7 +333,7 @@ ol {
 
 @media (max-width: 576px) {
 	.header {
-		padding: 40px 0 0;
+		padding: 20px 0 0;  /*Pehlay 40px*/
 	}
 }
 
@@ -570,13 +570,15 @@ ol {
  -----------------------*/
 
 .hero__section {
-	padding-top: 70px;  /*pehlay 120px*/
-	margin-bottom: 90px;
+	padding-top: 50px;  /*pehlay 120px*/
+	margin-bottom: 20px; /*pehlay 90px*/
+	/*background-color: #333;*/
 }
 
 @media (max-width: 576px) {
 	.hero__section {
-		padding-top: 30px;
+		padding-top: 0px;  /*pehlay 30px*/
+		
 	}
 }
 
@@ -1135,6 +1137,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 @media (max-width: 576px) {
 	.contact__warp {
 		padding: 30px 15px 130px;
+		
 	}
 }
 
