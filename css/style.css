@@ -1143,6 +1143,17 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 	margin-bottom: 40px;
 }
 
+.marquee-element{
+	background-color: #333;
+	padding-top: 2px;
+}
+.marquee-element a{
+	display: inline-block;
+	text-align: center;
+	color: white;
+	margin-right: 5px;
+	text-transform: uppercase;
+}
 .contact__social a {
 	display: inline-block;
 	text-align: center;
