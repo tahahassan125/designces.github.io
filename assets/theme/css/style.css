@@ -780,9 +780,8 @@ body {
   width: 14px;
 }
 
-.form-control {
+/*.form-control {                          Shifted to Own Customiza.. 
   background-color: #ffffff;
-  background-clip: border-box;
   color: #232323;
   line-height: 1rem !important;
   height: auto;
@@ -791,7 +790,7 @@ body {
   border: 1px solid transparent !important;
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px 0px, rgba(0, 0, 0, 0.07) 0px 1px 3px 0px, rgba(0, 0, 0, 0.03) 0px 0px 0px 1px;
-}
+}*/
 .form-active .form-control:invalid {
   border-color: red;
 }
