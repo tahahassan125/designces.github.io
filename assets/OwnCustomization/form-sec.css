@@ -27,11 +27,21 @@ input.city-img{
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px 0px, rgba(0, 0, 0, 0.07) 0px 1px 3px 0px, rgba(0, 0, 0, 0.03) 0px 0px 0px 1px; 
   /*box-shadow: rgba(33, 189, 212, 0.5) 0px 1px 1px 0px, rgba(33, 189, 212, 0.07) 0px 1px 3px 0px, rgba(33, 189, 212, 0.03) 0px 0px 0px 1px;*/
 
-
-
-
-
   text-indent : 50px;                     /* Custom Add */
+}
+
+
+/*Form Section Button Related Css */
+
+.cid-ucg5oINCED form .mbr-section-btn .btn{   /*yani ka form ka btn*/
+    font-weight: 700 !important; 
+    font-size: 26px !important;
+    letter-spacing: 2px;                      /*Custom */
+    border-radius: 6px !important;            /*custom*/
+    height: 82px !important;                  /*custom for btn height*/
+
+
+
 
 
 }
