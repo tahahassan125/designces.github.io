@@ -699,9 +699,16 @@ a {
   align-items: center;
 }
 .cid-ucblrO7tA4 .carousel-item img {
-  height: 505px;                      /*pehlay 100vh*/
-  object-fit: cover;
+  height: auto;                      /*pehlay 100vh  505px*/
+  object-fit: cover;                   /*object-fit: cover; background-size: cover;*/
+  
+  
 }
+
+/*Custom Add*/
+
+
+
 .cid-ucblrO7tA4 .carousel-caption {
   bottom: 40px;
 }
