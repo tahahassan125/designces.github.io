@@ -700,7 +700,7 @@ a {
 }
 .cid-ucblrO7tA4 .carousel-item img {
   height: auto;                      /*pehlay 100vh  505px*/
-  object-fit: cover;                   /*object-fit: cover; background-size: cover;*/
+  background-size: cover;                   /*object-fit: cover; background-size: cover;*/
   
   
 }
