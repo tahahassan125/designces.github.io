@@ -706,7 +706,12 @@ a {
 }
 
 /*Custom Add*/
-
+@media (max-width: 768px) {
+  .cid-ucblrO7tA4 .carousel-item img {
+    width: 950px ;
+    height: 252.5px;
+  }
+}
 
 
 .cid-ucblrO7tA4 .carousel-caption {
