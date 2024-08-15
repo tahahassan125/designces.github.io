@@ -3648,7 +3648,7 @@ quote css
 
 .quote-area {
   position: relative;
-  background-image: url('../images/01.jpg');
+  background-image: url('../images/POSbarcode-big.jpg'); /*Pehlay ../images/01.jpg*/
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
