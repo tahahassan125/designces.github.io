@@ -281,7 +281,10 @@ Skilled & Expert</h6> -->
         <div class="row">
           <div class="col-lg-7 mx-auto wow fadeInDown" data-wow-duration="1s" data-wow-delay=".25s">
             <div class="site-heading text-center"><span class="site-title-tagline">Pricing Plan</span>
-              <h2 class="site-title">We Provide Global <span>Solutions</span> <!--Pricing Packages--></h2><!--Standard-->
+              <h2 class="site-title">We Provide Global <span>Solutions</span>
+                <!--Pricing Packages-->
+              </h2>
+              <!--Standard-->
               <div class="heading-divider"></div>
             </div>
           </div>
@@ -317,16 +320,23 @@ Skilled & Expert</h6> -->
               </div>
               <div class="pricing-feature">
                 <div class="pricing-content">
-                  <h4>Get Landing Pages</h4>  <!--Standard-->
-                  <h1 class="pricing-amount">PKR 3200</h1><!--$120.78-->
+                  <h4>Get Landing Pages</h4>
+                  <!--Standard-->
+                  <h1 class="pricing-amount">PKR 3200</h1>
+                  <!--$120.78-->
                 </div>
                 <ul>
-                  <li>Clear and Engaging Headline</li><!--Remote Access-->
-                  <li>Strong Call-to-Action (CTA)</li><!--Day And Night Vision-->
-                  <li>Compelling Visuals</li><!--2 In And Out Door Camera-->
-                  <li>Persuasive Subheadline</li><!--Six Month Backup-->
-                  <li>Lead Capture Form Etc..</li><!--Motion Detection-->
-                </ul><a href="#" class="theme-btn openFormBtn" >Get Started<i class="fas fa-arrow-right"></i></a>
+                  <li>Clear and Engaging Headline</li>
+                  <!--Remote Access-->
+                  <li>Strong Call-to-Action (CTA)</li>
+                  <!--Day And Night Vision-->
+                  <li>Compelling Visuals</li>
+                  <!--2 In And Out Door Camera-->
+                  <li>Persuasive Subheadline</li>
+                  <!--Six Month Backup-->
+                  <li>Lead Capture Form Etc..</li>
+                  <!--Motion Detection-->
+                </ul><a href="#" class="theme-btn openFormBtn">Get Started<i class="fas fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -337,47 +347,120 @@ Skilled & Expert</h6> -->
               </div>
               <div class="pricing-feature">
                 <div class="pricing-content">
-                  <h4>Inventory System</h4><!--Premium-->
-                  <h1 class="pricing-amount">Rs1500/mth</h1><!--$150.96-->
+                  <h4>Inventory System</h4>
+                  <!--Premium-->
+                  <h1 class="pricing-amount">Rs1500/mth</h1>
+                  <!--$150.96-->
                 </div>
                 <ul>
-                  <li>Generate Barcode Stickers</li>                     <!--Remote Access, Day And Night Vision, 2 In And Out Door Camera, Six Month Backup, Motion Detection-->
+                  <li>Generate Barcode Stickers</li>
+                  <!--Remote Access, Day And Night Vision, 2 In And Out Door Camera, Six Month Backup, Motion Detection-->
                   <li>Add Products With Details</li>
                   <li>Generate POS Receipt</li>
                   <li>Complete Sales Report</li>
                   <li>Access by Admin & User Feature</li>
-                </ul><a href="#" class="theme-btn openFormBtn" >Get Started<i class="fas fa-arrow-right"></i></a>
+                </ul><a href="#" class="theme-btn openFormBtn">Get Started<i class="fas fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-       <!-- Popup Form -->
-       <div id="popupForm" class="modal"> 
+      <!-- Popup Form -->
+      <div id="popupForm" class="modal">
         <div class="modal-content">
-            <span id="closeFormBtn" class="close-btn">&times;</span>
-            <h2>Submit your Query</h2>
-            <form id="popupFormContent">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+          <span id="closeFormBtn" class="close-btn">&times;</span>
+          <h2>Submit your Query</h2>
+          <form id="myForm" method="POST"> <!-- id="popupFormContent" Related to sheet-->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="Name" required>
 
-                <label for="contact">Contact No:</label>
-                <input type="tel" id="contact" name="contact" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="2" required></textarea>
-                
-                <button type="submit">Submit</button>
-            </form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="Email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="Phone" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="Message" required></textarea>
+
+            <!--<label for="message">Message:</label>
+            <textarea id="message" name="message" rows="2" required></textarea>-->
+
+            <button type="submit" id="submit-button">Submit</button>
+          </form>
+          <div id="message" style="display: none; 
+          margin: 20px;
+          font-weight: bold;
+          color: green;
+          padding: 8px;
+          background-color: beige;
+          border-radius: 4px;
+          border-color: aquamarine;"></div>
         </div>
-       </div>
+      </div>
+      <!--Related to sheet-->
+      <script>
+        document.getElementById("myForm").addEventListener("submit", function (e) {
+          e.preventDefault(); // Prevent the default form submission
+          document.getElementById("message").textContent = "Submitting..";
+          document.getElementById("message").style.display = "block";
+          document.getElementById("submit-button").disabled = true;
+  
+          // Collect the form data
+          var formData = new FormData(this);
+          var keyValuePairs = [];
+          for (var pair of formData.entries()) {
+            keyValuePairs.push(pair[0] + "=" + pair[1]);
+          }
+  
+          var formDataString = keyValuePairs.join("&");
+  
+          // Send a POST request to your Google Apps Script
+          fetch(
+            "https://script.google.com/macros/s/AKfycbxO3ftStjH5teTpO4ha68q7kMg9PoLbdUzsdJTDwSfDRi5SlafIzcC9dh1pQWJyOPIXYw/exec",
+            {
+              redirect: "follow",
+              method: "POST",
+              body: formDataString,
+              headers: {
+                "Content-Type": "text/plain;charset=utf-8",
+              },
+            }
+          )
+            .then(function (response) {
+              // Check if the request was successful
+              if (response) {
+                return response; // Assuming your script returns JSON response
+              } else {
+                throw new Error("Failed to submit the form.");
+              }
+            })
+            .then(function (data) {
+              // Display a success message
+              document.getElementById("message").textContent =
+                "Data submitted successfully!";
+              document.getElementById("message").style.display = "block";
+              document.getElementById("message").style.backgroundColor = "green";
+              document.getElementById("message").style.color = "beige";
+              document.getElementById("submit-button").disabled = false;
+              document.getElementById("myForm").reset();
+  
+              setTimeout(function () {
+                document.getElementById("message").textContent = "";
+                document.getElementById("message").style.display = "none";
+              }, 2600);
+            })
+            .catch(function (error) {
+              // Handle errors, you can display an error message here
+              console.error(error);
+              document.getElementById("message").textContent =
+                "An error occurred while submitting the form.";
+              document.getElementById("message").style.display = "block";
+            });
+        });
+      </script>
 
-       
-    
     </div>
 
 
@@ -621,7 +704,7 @@ Skilled & Expert</h6> -->
 </a></div></div></div></div></div></div></div> -->
 
     <!--Pricing Area    Moved Up--->
-    
+
 
     <!--Choose Us Area-->
     <div class="choose-area py-120">
@@ -775,7 +858,7 @@ There are many variations of passages of Lorem Ipsum available, but the majority
       </div>
     </div>
     <!--Partner Area   Moved Up-->
-    
+
     <!-- FAQ Area
 <div class="faq-area py-120"><div class="container"><div class="row align-items-center"><div class="col-lg-6"><div class="faq-left wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".25s"><div class="faq-img"><img src="assets/img/faq/01.jpg" alt=""></div>
 </div></div><div class="col-lg-6"><div class="faq-right wow fadeInUp" data-wow-duration="1s" data-wow-delay=".25s"><div class="site-heading mb-3"><span class="site-title-tagline">Faq's</span><h2 class="site-title my-3">General <span>frequently</span> asked questions</h2></div>
@@ -925,6 +1008,8 @@ There are many variations of passages of Lorem Ipsum available, but the majority
   <script src="js/wow.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/scripts.js"></script>
+  <!--Sweet Alert 2 CDN https://sweetalert.js.org/guides/-->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </body>
 
