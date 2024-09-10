@@ -283,7 +283,7 @@ site title css
   letter-spacing: 3px;
   font-size: 20px;
   font-weight: 700;
-  color: #ffc20e;
+  color:  #2897fb;  /*pehlay #ffc20e; */
   position: relative;
 }
 
@@ -595,7 +595,7 @@ theme button
   text-align: center;
   overflow: hidden;
   border: none;
-  background: #ffc20e;
+  background: #2897fb;  /*#ffc20e;*/
   box-shadow: 0 3px 24px rgb(0 0 0 / 12%);
   z-index: 1;
 }
@@ -673,7 +673,7 @@ scroll-top css
   outline: none;
   border-radius: 50px;
   color: #fff;
-  background: #ffc20e;
+  background: #eb003b;  /*#ffc20e;*/
   cursor: pointer;
   width: 50px;
   height: 50px;
@@ -697,7 +697,7 @@ header top css
 ====================== */
 
 .header-top {
-  background: #ffc20e;
+  background: #2897fb;    /*#ffc20e;*/
   padding: 0;
   position: relative;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -907,7 +907,7 @@ nav menu css
 
   .navbar .nav-item .dropdown-menu .dropdown-item:hover {
     background: transparent;
-    color: #ffc20e;
+    color: #2897fb;   /*#ffc20e;*/
     padding-left: 30px;
   }
 
@@ -919,7 +919,7 @@ nav menu css
     width: 0;
     height: 4px;
     border-radius: 10px;
-    background: #ffc20e;
+    background: #eb003b;  /*#ffc20e;*/
     transition: all .5s ease-in-out;
     z-index: -1;
   }
@@ -934,7 +934,7 @@ nav menu css
 
   .navbar .nav-item .nav-link.active,
   .navbar .nav-item:hover .nav-link {
-    color: #ffc20e;
+    color: #2897fb;   /*#ffc20e;*/
   }
 
   .navbar .nav-item:hover .dropdown-menu {
@@ -980,7 +980,7 @@ nav menu css
   }
 
   .header-nav-link:hover {
-    color: #ffc20e;
+    color: #2897fb;     /*#ffc20e;*/
   }
 
   .header-nav-link.search-box-outer {
@@ -1017,12 +1017,12 @@ nav menu css
 }
 
 .navbar.fixed-top .header-nav-link:hover {
-  color: #ffc20e;
+  color: #2897fb;        /*#ffc20e;*/
 }
 
 .navbar.fixed-top .nav-item .nav-link.active,
 .navbar.fixed-top .nav-item:hover .nav-link {
-  color: #ffc20e;
+  color: #2897fb;    /*#ffc20e;*/
 }
 
 
@@ -1151,7 +1151,7 @@ button.navbar-toggler:focus {
   }
 
   .navbar .nav-item .nav-link:hover {
-    color: #ffc20e !important;
+    color: #2897fb !important; /*#ffc20e;*/
   }
 
   .navbar-toggler {
@@ -1174,7 +1174,7 @@ button.navbar-toggler:focus {
   }
 
   .mobile-menu-link:hover {
-    color: #ffc20e;
+    color: #2897fb;       /*#ffc20e;*/
   }
 
   .navbar-toggler-btn-icon {
@@ -1256,7 +1256,7 @@ multi level dropdown menu
   }
 
   .navbar .nav-item .dropdown-submenu a:hover {
-    color: #ffc20e;
+    color: #2897fb;     /*#ffc20e;*/
   }
 }
 
@@ -1433,11 +1433,11 @@ hero css
 }
 
 .hero-single .hero-content .hero-title span {
-  color: #ffc20e;
+  color: #2897fb;    /*#ffc20e;*/
 }
 
 .hero-single .hero-content .hero-sub-title {
-  color: #ffc20e;
+  color: #2897fb;       /*#ffc20e;*/
   font-size: 22px;
   letter-spacing: 5px;
   position: relative;
@@ -1464,7 +1464,7 @@ hero css
 }
 
 .hero-slider.owl-theme .owl-nav [class*=owl-] {
-  color: #ffc20e;
+  color: #2897fb;     /*#ffc20e;*/
   font-size: 25px;
   margin: 0;
   padding: 0;
@@ -1480,7 +1480,7 @@ hero css
 }
 
 .hero-slider.owl-theme .owl-nav [class*=owl-]:hover {
-  background: #ffc20e;
+  background: #2897fb;   /*#ffc20e;*/
   color: #fff;
 }
 
@@ -2685,7 +2685,7 @@ cta-area css
 ====================== */
 
 .cta-area {
-  background: #ffc20e;
+  background: #2897fb;      /*ffc20e*/
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -2714,7 +2714,7 @@ cta-area css
 }
 
 .cta-text span {
-  color: #ffc20e;
+  color: #2897fb;    /*ffc20e*/
 }
 
 .cta-text p {
