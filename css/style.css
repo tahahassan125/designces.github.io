@@ -187,7 +187,7 @@ preloader
 
 .loader-dot {
   position: relative;
-  background: #ffc20e;
+  background: #eb003b;   /* ffc20e;Pehlay */
   border-radius: 50%;
   float: left;
   height: 18px;
