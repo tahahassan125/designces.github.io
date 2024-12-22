@@ -2019,13 +2019,13 @@ service css
   width: 25px;
   height: 25px;
   line-height: 25px;
-  background: #ffc20e;
+  background:   #eb003b; /*#ffc20e;*/
   color: #fff;
   border-radius: 50px;
 }
 
 .service-arrow a:hover{
-  color: #ffc20e;
+  color:  #2897fb;  /*#ffc20e;*/
 }
 
 
@@ -2442,7 +2442,7 @@ choose css
   width: 50px;
   line-height: 40px;
   text-align: center;
-  border: 3px solid #ffc20e;
+  border: 3px solid #2897fb; /*#ffc20e;*/
   border-radius: 50px;
   color: #fff;
   transition: 0.4s;
@@ -2644,7 +2644,7 @@ counter css
   position: absolute;
   left: 0;
   top: 0;
-  background: #ffc20e;
+  background:  #2897fb;  /*#ffc20e;*/
   transform: rotate(45deg);
   width: 100%;
   height: 100%;
@@ -3973,7 +3973,7 @@ pricing css
   position: absolute;
   width: 13px;
   height: 13px;
-  border: 3px solid #ffc20e;
+  border: 3px solid #eb003b; /*#ffc20e;*/
   border-radius: 50px;
   left: 0;
   top: 8px;
